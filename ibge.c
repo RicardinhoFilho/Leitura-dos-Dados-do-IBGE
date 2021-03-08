@@ -33,7 +33,6 @@ void igualaVetores(char *estado1, char *estado2)
 int main(void)
 {
 
-    int uf;
     char nomeUf[136];
     char estado[18];
     char estadoCompara[18];
@@ -75,7 +74,8 @@ int main(void)
             }
         }
     }
-
+    printf("Estado: %s", estadoCompara);
+    printf("  Quantidade: %i\n", cont);
     fclose(file);
 
     return 0;
